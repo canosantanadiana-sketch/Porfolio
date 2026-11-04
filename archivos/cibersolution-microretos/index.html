@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CiberSolution · Microretos — Un reto demuestra lo que vales</title>
+<meta name="description" content="Microretos conecta jóvenes talento con pymes y startups a través de retos pequeños y reales. Un currículo dice lo que sabes. Un reto demuestra lo que vales.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#inicio">
+      <img class="brand-logo" src="assets/img/logo.png" alt="Logo CiberSolution">
+      <span class="brand-text">CiberSolution<b>·Microretos</b></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#retos">Retos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#planes">Planes</a>
+      <a href="#evolucion">Roadmap</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions" id="navActions">
+      <button class="btn btn-ghost" onclick="openAuth('joven')">Soy joven</button>
+      <button class="btn btn-primary" onclick="openAuth('empresa')">Soy empresa</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill">Beta · Piloto en Málaga</span>
+      <h1>Un currículo dice lo que sabes.<br><span class="grad">Un reto demuestra lo que vales.</span></h1>
+      <p class="lead">¿Cuántos jóvenes con talento se quedan sin su primera oportunidad por no tener experiencia? Microretos conecta jóvenes de hasta 30 años con pymes y startups mediante tareas pequeñas, reales y verificables.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg" onclick="openAuth('joven')">Quiero demostrar mi talento</button>
+        <button class="btn btn-outline btn-lg" onclick="openAuth('empresa')">Quiero publicar un reto</button>
+      </div>
+      <div class="hero-stats">
+        <div><b data-count="120">0</b><span>Retos publicados</span></div>
+        <div><b data-count="87">0</b><span>% valoraciones positivas</span></div>
+        <div><b data-count="34">0</b><span>Contrataciones vía plataforma</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="reto-card floating">
+        <div class="reto-tag">Reto · Diseño</div>
+        <h3>Rediseña la carta digital de una cafetería de Málaga</h3>
+        <p>Tarea real · 5–10 h · Entrega: PDF o Figma</p>
+        <div class="reto-foot"><span>💶 80 €</span><span>⭐ 4.8 · 12 entregas</span></div>
+      </div>
+      <div class="reto-card floating d2">
+        <div class="reto-tag green">Valoración verificada</div>
+        <h3>"Superó el reto en 3 días. Lo contratamos."</h3>
+        <p>— Pyme local, sector retail</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CÓMO FUNCIONA ===== -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <h2 class="section-title">¿Cómo funciona?</h2>
+    <p class="section-sub">Jóvenes de hasta 30 años y pymes, con tareas pequeñas y reales.</p>
+    <div class="tabs">
+      <button class="tab active" data-tab="joven" onclick="switchTab('joven')">🚀 Jóvenes — busco trabajo</button>
+      <button class="tab" data-tab="empresa" onclick="switchTab('empresa')">🏢 Empresas — busco talento</button>
+    </div>
+    <div class="tab-panels">
+      <div class="tab-panel active" id="panel-joven">
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3>Elige un reto</h3><p>Explora retos reales de pymes y startups: diseño, marketing, código, vídeo, datos…</p></div>
+          <div class="step"><div class="step-num">2</div><h3>Hazlo y entrégalo</h3><p>Sin título exigido. Tu entrega es tu portfolio y tu carta de presentación.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Recibe tu valoración</h3><p>Valoraciones verificadas de empresas reales que certifican tu experiencia.</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-empresa">
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3>Publica un reto</h3><p>Define una tarea pequeña y real de tu negocio. Gratis en la beta.</p></div>
+          <div class="step"><div class="step-num">2</div><h3>Recibe entregas</h3><p>Compara trabajos reales, no currículos. Ahorra tiempo y riesgo al contratar.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Valora y contrata</h3><p>Valora a los jóvenes y, si encaja, contrátalos con evidencia de su trabajo.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="why">
+      <h3>¿Por qué nos eligen?</h3>
+      <div class="why-grid">
+        <div class="why-item">🏆<h4>Es el mejor</h4><p>Valoraciones de empresas reales: experiencia verificada, no autoDeclarada.</p></div>
+        <div class="why-item">🎓<h4>Me utilizan</h4><p>Gratis para jóvenes, sin título exigido y con portfolio desde el primer reto.</p></div>
+        <div class="why-item">💰<h4>Me pagan</h4><p>Las empresas ahorran tiempo y riesgo al contratar talento demostrado.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RETOS ===== -->
+<section class="section alt" id="retos">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">Retos abiertos</h2>
+        <p class="section-sub">Tareas pequeñas y reales. Tu entrega, tu currículo.</p>
+      </div>
+      <button class="btn btn-primary" id="publishBtn" onclick="tryPublish()">+ Publicar reto</button>
+    </div>
+    <div class="filters" id="filters">
+      <button class="chip active" data-cat="todos">Todos</button>
+      <button class="chip" data-cat="diseño">Diseño</button>
+      <button class="chip" data-cat="marketing">Marketing</button>
+      <button class="chip" data-cat="código">Código</button>
+      <button class="chip" data-cat="vídeo">Vídeo</button>
+      <button class="chip" data-cat="datos">Datos</button>
+    </div>
+    <div class="retos-grid" id="retosGrid"></div>
+  </div>
+</section>
+
+<!-- ===== PLANES ===== -->
+<section class="section" id="planes">
+  <div class="container">
+    <h2 class="section-title">¿Cómo gano dinero? Planes</h2>
+    <p class="section-sub">Gratis para jóvenes. Suscripciones para empresas e instituciones.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Jóvenes</h3>
+        <div class="price">0 €<span>/mes</span></div>
+        <ul><li>Acceso a todos los retos</li><li>Portfolio con valoraciones verificadas</li><li>Recomendaciones a empresas</li><li>Premium gratuito tras 1 año (Apóstoles)</li></ul>
+        <button class="btn btn-outline" onclick="openAuth('joven')">Empezar gratis</button>
+      </div>
+      <div class="plan featured">
+        <div class="plan-badge">Más popular</div>
+        <h3>Empresas</h3>
+        <div class="price">49 €<span>/mes</span></div>
+        <ul><li>Publicación ilimitada de retos</li><li>Gestión de entregas y valoraciones</li><li>% por perfiles contratados</li><li>Acceso a talento filtrado por evidencias</li></ul>
+        <button class="btn btn-primary" onclick="openAuth('empresa')">Probar 30 días</button>
+      </div>
+      <div class="plan">
+        <h3>Instituciones</h3>
+        <div class="price">199 €<span>/mes</span></div>
+        <ul><li>Convenios con centros y ayuntamientos</li><li>Mentoría profesional</li><li>Panel de empleabilidad juvenil</li><li>Informes de impacto</li></ul>
+        <button class="btn btn-outline" onclick="openAuth('empresa')">Contactar</button>
+      </div>
+    </div>
+    <p class="plans-note">+ Suscripciones de empresas y usuarios · Mentoría profesional · Convenios con centros y ayuntamientos.</p>
+  </div>
+</section>
+
+<!-- ===== CLIENTES Y ALIADOS ===== -->
+<section class="section alt" id="clientes">
+  <div class="container">
+    <h2 class="section-title">Principales clientes</h2>
+    <div class="clients-grid">
+      <div class="client-card">🏪<h4>Pymes y comercios</h4><p>de Málaga</p></div>
+      <div class="client-card">🌐<h4>Empresas</h4><p>nacionales e internacionales</p></div>
+      <div class="client-card">🚀<h4>Startups</h4><p>que buscan talento joven</p></div>
+      <div class="client-card">🎓<h4>Usuarios</h4><p>Jóvenes hasta 30 años en búsqueda activa</p></div>
+      <div class="client-card">🤝<h4>Aliados</h4><p>Ayuntamientos, FP, universidades y bancos</p></div>
+    </div>
+    <h3 class="sub-title">¿Cómo llego a mis clientes?</h3>
+    <div class="channels">
+      <span>🏫 Institutos y FP</span><span>🎓 Universidades</span><span>📱 Redes sociales</span>
+      <span>🎥 Creadores de contenido</span><span>🏢 Oficinas de empleo</span><span>🎪 Eventos</span>
+    </div>
+    <p class="apostoles">⭐ <b>Programa Apóstoles:</b> quien supera un año en la plataforma recibe servicio premium y más recomendaciones a empresas.</p>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section class="section" id="evolucion">
+  <div class="container">
+    <h2 class="section-title">Evolución</h2>
+    <div class="roadmap">
+      <div class="road-step done"><span class="road-dot"></span><h3>1 · Ahora — Piloto</h3><p>Adaptar apps existentes y reunir a las primeras empresas y jóvenes.</p></div>
+      <div class="road-step"><span class="road-dot"></span><h3>2 · Después — Eventos y valoraciones</h3><p>Demostrar habilidades y promociones con empresas.</p></div>
+      <div class="road-step"><span class="road-dot"></span><h3>3 · Meta — Plataforma propia</h3><p>Base de empresas y aliados que ayuden a financiarla.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA / CONTACTO ===== -->
+<section class="section cta" id="contacto">
+  <div class="container cta-inner">
+    <h2>HAZ LO QUE AMAS<br><span>Y DEMUESTRA LO QUE VALES</span></h2>
+    <p>CiberSolution · Conectamos el talento joven</p>
+    <div class="hero-cta center">
+      <button class="btn btn-primary btn-lg" onclick="openAuth('joven')">Crear cuenta gratis</button>
+      <a class="btn btn-outline btn-lg" href="https://tiktok.com" target="_blank" rel="noopener">🎵 TikTok @CiberSolution</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-brand"><img src="assets/img/logo.png" alt="CiberSolution"> CiberSolution · Microretos — Beta</span>
+    <span>Hecho con 💙 en Málaga · Ofertas y oportunidades para el talento joven</span>
+  </div>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modalBox"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
